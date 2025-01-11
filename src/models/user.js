@@ -5,6 +5,7 @@ const UserSchema = new Schema({
   username: { type: String, required: true, unique: true },
   name: { type: String, required: true },
   avatar_url:{type:String,required:true},
+  repos_url:{type:String,required:true},
   bio: { type: String },
   blog: { type: String },
   location: { type: String },

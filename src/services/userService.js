@@ -12,6 +12,7 @@ const saveUser = async (username) => {
     username: data.login,
     name: data.name,
     avatar_url:data.avatar_url,
+    repos_url:data.repos_url,
     bio: data.bio,
     blog: data.blog,
     location: data.location,
