@@ -1,7 +1,7 @@
 import { saveUser, searchUsers, softDeleteUser, updateUser, listUsers } from "../services/userService.js";
 
 const createUser = async (req, res) => {
-  console.log(req.body)
+  
   try {
     const user = await saveUser(req.body.username);
     res.json(user);

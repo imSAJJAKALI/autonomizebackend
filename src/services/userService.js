@@ -2,10 +2,12 @@ import User from '../models/user.js';
 import fetchGitHubUser from '../utils/githubApi.js';
 
 const saveUser = async (username) => {
-  const existingUser = await User.findOne({ username, is_deleted: false });
+  console.log("saveuse",username)
+  const existingUser = await User.findOne({ username:username });
   if (existingUser) return existingUser;
 
   const data = await fetchGitHubUser(username);
+  console.log(data)
   const newUser = new User({
     username: data.login,
     name: data.name,
