@@ -24,6 +24,8 @@ const saveUser = async (username) => {
     updated_at: data.updated_at,
   });
 
+  
+
   return newUser.save();
 };
 
