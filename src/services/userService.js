@@ -11,6 +11,7 @@ const saveUser = async (username) => {
   const newUser = new User({
     username: data.login,
     name: data.name,
+    avatar_url:data.avatar_url,
     bio: data.bio,
     blog: data.blog,
     location: data.location,
