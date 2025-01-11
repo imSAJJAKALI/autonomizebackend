@@ -6,4 +6,5 @@ const fetchGitHubUser = async (username) => {
     },
   });
   return response.data;
+  
 };
