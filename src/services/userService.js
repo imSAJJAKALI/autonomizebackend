@@ -7,7 +7,7 @@ const saveUser = async (username) => {
   if (existingUser) return existingUser;
 
   const data = await fetchGitHubUser(username);
-  console.log(data)
+  
   const newUser = new User({
     username: data.login,
     name: data.name,
