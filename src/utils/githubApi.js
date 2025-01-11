@@ -5,6 +5,8 @@ const fetchGitHubUser = async (username) => {
       Authorization: `Bearer ${token}`,
     },
   });
-  
+
   return response.data;
 };
+
+export default fetchGitHubUser;
