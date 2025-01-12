@@ -6,7 +6,7 @@ const fetchGitHubUser = async (username) => {
     return response.data; // Return the data from the response
   } catch (error) {
     console.error('Error fetching GitHub user:', error.message);
-    throw new Error('Unable to fetch GitHub user data');
+    throw new Error(error);
   }
 };
 
